@@ -1,0 +1,484 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Home - FITZONE
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            WELCOME TO FITZONE
+        </p>
+
+        <h1>
+            TRANSFORM YOUR BODY
+            <span>TRANSFORM YOUR LIFE</span>
+        </h1>
+
+        <p class="hero-text">
+            Build strength, improve your fitness and become the best version
+            of yourself with FITZONE.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/contact/" class="btn-primary">JOIN NOW</a>
+            <a href="/membership/" class="btn-secondary">VIEW MEMBERSHIP</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why-section">
+
+    <div class="section-heading">
+
+        <p>WHY CHOOSE US</p>
+
+        <h2>
+            Everything You Need To
+            <span>Reach Your Goals</span>
+        </h2>
+
+    </div>
+
+
+    <div class="why-container">
+
+        <div class="why-card">
+
+            <div class="why-icon">🏋️</div>
+
+            <h3>Modern Equipment</h3>
+
+            <p>
+                Train with modern and quality gym equipment designed
+                for effective workouts.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">💪</div>
+
+            <h3>Expert Trainers</h3>
+
+            <p>
+                Get guidance from experienced trainers and improve
+                your fitness with proper techniques.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">🔥</div>
+
+            <h3>Flexible Plans</h3>
+
+            <p>
+                Choose a membership plan that fits your fitness goals
+                and lifestyle.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">❤️</div>
+
+            <h3>Healthy Lifestyle</h3>
+
+            <p>
+                Build strength, improve your health and maintain
+                a healthy lifestyle.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT PREVIEW
+========================= -->
+
+<section class="about-section">
+
+    <div class="about-content">
+
+        <p class="section-label">
+            ABOUT FITZONE
+        </p>
+
+        <h2>
+            More Than Just A <span>Gym</span>
+        </h2>
+
+        <p>
+            FITZONE is a modern fitness center focused on helping people
+            achieve their fitness goals. Whether you want to build muscle,
+            lose weight or simply stay healthy, we are here to support you.
+        </p>
+
+        <p>
+            With professional trainers, modern equipment and flexible
+            membership plans, FITZONE provides everything you need
+            for your fitness journey.
+        </p>
+
+        <a href="/about/" class="btn-primary">
+            LEARN MORE
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES PREVIEW
+========================= -->
+
+<section class="services-section">
+
+    <div class="section-heading">
+
+        <p>OUR SERVICES</p>
+
+        <h2>
+            Train. Sweat. <span>Transform.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="services-container">
+
+        <div class="service-card">
+
+            <div class="service-icon">🏋️</div>
+
+            <h3>Strength Training</h3>
+
+            <p>
+                Build muscle and increase your strength with effective
+                strength training workouts.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🏃</div>
+
+            <h3>Cardio Training</h3>
+
+            <p>
+                Improve stamina, burn calories and keep your heart healthy
+                with cardio workouts.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🧘</div>
+
+            <h3>Personal Training</h3>
+
+            <p>
+                Get personalized workout guidance from our professional
+                fitness trainers.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRAINERS PREVIEW
+========================= -->
+
+<section class="trainers-section">
+
+    <div class="section-heading">
+
+        <p>OUR TRAINERS</p>
+
+        <h2>
+            Meet Our <span>Expert Trainers</span>
+        </h2>
+
+    </div>
+
+
+    <div class="trainers-container">
+
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                Trainer
+            </div>
+
+            <h3>John Smith</h3>
+
+            <p>Strength & Fitness Coach</p>
+
+        </div>
+
+
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                Trainer
+            </div>
+
+            <h3>Alex Johnson</h3>
+
+            <p>Personal Fitness Trainer</p>
+
+        </div>
+
+
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                Trainer
+            </div>
+
+            <h3>Sarah Williams</h3>
+
+            <p>Cardio & Wellness Coach</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MEMBERSHIP PREVIEW
+========================= -->
+
+<section class="membership-section">
+
+    <div class="section-heading">
+
+        <p>MEMBERSHIP PLANS</p>
+
+        <h2>
+            Choose Your <span>Fitness Plan</span>
+        </h2>
+
+    </div>
+
+
+    <div class="membership-container">
+
+        <div class="membership-card">
+
+            <h3>Basic</h3>
+
+            <h4>
+                ₹999 <span>/ Month</span>
+            </h4>
+
+            <p>Gym access</p>
+            <p>Cardio equipment</p>
+            <p>Basic workout guidance</p>
+
+            <a href="/contact/" class="btn-secondary">
+                CHOOSE PLAN
+            </a>
+
+        </div>
+
+
+        <div class="membership-card popular">
+
+            <p class="popular-label">
+                MOST POPULAR
+            </p>
+
+            <h3>Premium</h3>
+
+            <h4>
+                ₹1,999 <span>/ Month</span>
+            </h4>
+
+            <p>Unlimited gym access</p>
+            <p>Personal training</p>
+            <p>Workout guidance</p>
+
+            <a href="/contact/" class="btn-primary">
+                CHOOSE PLAN
+            </a>
+
+        </div>
+
+
+        <div class="membership-card">
+
+            <h3>Elite</h3>
+
+            <h4>
+                ₹2,999 <span>/ Month</span>
+            </h4>
+
+            <p>Unlimited gym access</p>
+            <p>Personal trainer</p>
+            <p>Diet & fitness guidance</p>
+
+            <a href="/contact/" class="btn-secondary">
+                CHOOSE PLAN
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BMI CALCULATOR
+========================= -->
+
+<section class="bmi-section">
+
+    <div class="section-heading">
+
+        <p>FITNESS CHECK</p>
+
+        <h2>
+            Check Your <span>BMI</span>
+        </h2>
+
+        <p>
+            Calculate your Body Mass Index and understand your
+            current fitness level.
+        </p>
+
+    </div>
+
+    <div class="bmi-box">
+
+        <label for="height">
+            Height (cm)
+        </label>
+
+        <input type="number" id="height" placeholder="Enter height">
+
+        <label for="weight">
+            Weight (kg)
+        </label>
+
+        <input type="number" id="weight" placeholder="Enter weight">
+
+        <button type="button" id="bmiButton">
+            CALCULATE BMI
+        </button>
+
+        <div id="bmiResult"></div>
+
+    </div>
+
+
+    <script>
+        const bmiButton = document.getElementById("bmiButton");
+
+        bmiButton.addEventListener("click", function () {
+
+            const height = parseFloat(document.getElementById("height").value);
+            const weight = parseFloat(document.getElementById("weight").value);
+
+            const result = document.getElementById("bmiResult");
+
+            if (!height || !weight || height <= 0 || weight <= 0) {
+                result.innerHTML = "Please enter valid height and weight.";
+                return;
+            }
+
+            const heightInMeter = height / 100;
+            const bmi = weight / (heightInMeter * heightInMeter);
+
+            let category = "";
+
+            if (bmi < 18.5) {
+                category = "Underweight";
+            } else if (bmi < 25) {
+                category = "Normal Weight";
+            } else if (bmi < 30) {
+                category = "Overweight";
+            } else {
+                category = "Obesity";
+            }
+
+            result.innerHTML =
+                "<strong>Your BMI: " + bmi.toFixed(1) + "</strong><br>" +
+                "Category: " + category;
+        });
+    </script>
+
+</section>
+
+
+<!-- =========================
+     CALL TO ACTION
+========================= -->
+
+<section class="cta-section">
+
+    <div class="cta-content">
+
+        <h2>
+            Ready To Start Your
+            <span>Fitness Journey?</span>
+        </h2>
+
+        <p>
+            Join FITZONE today and take the first step towards
+            a stronger and healthier you.
+        </p>
+
+        <a href="/contact/" class="btn-primary">
+            JOIN FITZONE
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+BMI Calculator - FITZONE
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/bmi.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="bmi-page">
+
+    <!-- HEADER -->
+    <div class="bmi-header">
+
+        <p>BMI CALCULATOR</p>
+
+        <h1>
+            Check Your <span>Body Mass Index</span>
+        </h1>
+
+        <p class="bmi-intro">
+            Calculate your BMI and get a quick idea about
+            your current weight category.
+        </p>
+
+    </div>
+
+
+    <!-- BMI CALCULATOR -->
+    <div class="bmi-container">
+
+        <div class="bmi-form">
+
+            <h2>Calculate Your BMI</h2>
+
+            <p>
+                Enter your details below to calculate your BMI.
+            </p>
+
+
+            <div class="input-group">
+
+                <label for="weight">
+                    Weight (kg)
+                </label>
+
+                <input
+                    type="number"
+                    id="weight"
+                    placeholder="Enter your weight"
+                    min="1"
+                    step="0.1"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="height">
+                    Height (cm)
+                </label>
+
+                <input
+                    type="number"
+                    id="height"
+                    placeholder="Enter your height"
+                    min="1"
+                    step="0.1"
+                >
+
+            </div>
+
+
+            <button
+                type="button"
+                id="calculate-bmi"
+                class="bmi-button"
+            >
+                CALCULATE BMI
+            </button>
+
+
+            <button
+                type="button"
+                id="reset-bmi"
+                class="bmi-reset"
+            >
+                RESET
+            </button>
+
+
+            <!-- RESULT -->
+            <div id="bmi-result" class="bmi-result">
+
+                <h3>Your BMI</h3>
+
+                <div id="bmi-value">
+                    --
+                </div>
+
+                <p id="bmi-category">
+                    Enter your details to calculate BMI.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BMI INFORMATION -->
+        <div class="bmi-info">
+
+            <h2>BMI Categories</h2>
+
+            <p>
+                BMI is a simple measurement based on your weight
+                and height.
+            </p>
+
+
+            <div class="bmi-category-box">
+
+                <div>
+                    <span>Underweight</span>
+                    <strong>Below 18.5</strong>
+                </div>
+
+                <div>
+                    <span>Normal Weight</span>
+                    <strong>18.5 - 24.9</strong>
+                </div>
+
+                <div>
+                    <span>Overweight</span>
+                    <strong>25 - 29.9</strong>
+                </div>
+
+                <div>
+                    <span>Obesity</span>
+                    <strong>30 or above</strong>
+                </div>
+
+            </div>
+
+
+            <div class="bmi-note">
+
+                <h3>Important Note</h3>
+
+                <p>
+                    BMI is only a general indicator and does not
+                    directly measure body fat or overall health.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CTA -->
+    <div class="bmi-cta">
+
+        <h2>
+            Ready To Start Your <span>Fitness Journey?</span>
+        </h2>
+
+        <p>
+            Join FITZONE and get professional guidance to achieve
+            your fitness goals.
+        </p>
+
+        <a href="/contact/" class="btn-primary">
+            JOIN FITZONE
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- BMI JAVASCRIPT -->
+
+<script>
+
+    const calculateButton = document.getElementById("calculate-bmi");
+    const resetButton = document.getElementById("reset-bmi");
+
+    const weightInput = document.getElementById("weight");
+    const heightInput = document.getElementById("height");
+
+    const bmiValue = document.getElementById("bmi-value");
+    const bmiCategory = document.getElementById("bmi-category");
+
+
+    calculateButton.addEventListener("click", function () {
+
+        const weight = parseFloat(weightInput.value);
+        const height = parseFloat(heightInput.value);
+
+
+        if (!weight || !height || weight <= 0 || height <= 0) {
+
+            bmiValue.textContent = "--";
+
+            bmiCategory.textContent =
+                "Please enter valid weight and height.";
+
+            return;
+        }
+
+
+        const heightInMeters = height / 100;
+
+        const bmi =
+            weight / (heightInMeters * heightInMeters);
+
+
+        bmiValue.textContent = bmi.toFixed(1);
+
+
+        if (bmi < 18.5) {
+
+            bmiCategory.textContent =
+                "Category: Underweight";
+
+        } else if (bmi < 25) {
+
+            bmiCategory.textContent =
+                "Category: Normal Weight";
+
+        } else if (bmi < 30) {
+
+            bmiCategory.textContent =
+                "Category: Overweight";
+
+        } else {
+
+            bmiCategory.textContent =
+                "Category: Obesity";
+
+        }
+
+    });
+
+
+    resetButton.addEventListener("click", function () {
+
+        weightInput.value = "";
+        heightInput.value = "";
+
+        bmiValue.textContent = "--";
+
+        bmiCategory.textContent =
+            "Enter your details to calculate BMI.";
+
+    });
+
+</script>
+
+{% endblock %}

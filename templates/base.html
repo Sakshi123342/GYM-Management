@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}FITZONE{% endblock %}
+    </title>
+
+    {% load static %}
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Page Specific CSS -->
+    {% block extra_css %}
+    {% endblock %}
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="/" class="logo">
+                FIT<span>Zone</span>
+            </a>
+
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+
+                <a href="/">Home</a>
+
+                <a href="/about/">About</a>
+
+                <a href="/services/">Services</a>
+
+                <a href="/trainers/">Trainers</a>
+
+                <a href="/membership/">Membership</a>
+
+                <a href="/bmi/">BMI Calculator</a>
+
+                <a href="/contact/">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         PAGE CONTENT
+    ========================== -->
+
+    {% block content %}
+    {% endblock %}
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 FITZONE. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

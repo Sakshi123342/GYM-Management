@@ -1,0 +1,185 @@
+/* =========================
+   SERVICES PAGE
+========================= */
+
+.services-page {
+    background: #ffffff;
+    color: #222222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.services-header {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+.services-header > p:first-child {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.services-header h1 {
+    font-size: 44px;
+    margin-bottom: 18px;
+}
+
+.services-header h1 span {
+    color: #e63946;
+}
+
+.services-intro {
+    max-width: 700px;
+    margin: auto;
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SERVICES GRID
+========================= */
+
+.services-grid {
+    max-width: 1150px;
+    margin: auto;
+    padding: 10px 6% 90px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   SERVICE BOX
+========================= */
+
+.service-box {
+    padding: 35px 30px;
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.service-box-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.service-box h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.service-box > p {
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-box ul {
+    list-style: none;
+}
+
+.service-box ul li {
+    padding: 8px 0;
+    color: #555555;
+}
+
+.service-box ul li::before {
+    content: "✓";
+    color: #e63946;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.services-cta {
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.services-cta h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.services-cta h2 span {
+    color: #e63946;
+}
+
+.services-cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .services-header {
+        padding: 60px 20px 40px;
+    }
+
+    .services-header h1 {
+        font-size: 32px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 10px 6% 60px;
+    }
+
+    .services-cta {
+        padding: 60px 20px;
+    }
+
+    .services-cta h2 {
+        font-size: 30px;
+    }
+
+}

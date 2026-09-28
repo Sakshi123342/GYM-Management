@@ -1,0 +1,398 @@
+/* =========================
+   BMI PAGE
+========================= */
+
+.bmi-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.bmi-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bmi-header > p:first-child {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.bmi-header h1 {
+    font-size: 42px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.bmi-header h1 span {
+    color: #e63946;
+}
+
+.bmi-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BMI CONTAINER
+========================= */
+
+.bmi-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+
+/* =========================
+   BMI FORM
+========================= */
+
+.bmi-form {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.bmi-form h2 {
+    font-size: 28px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.bmi-form > p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #e63946;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.bmi-button {
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #e63946;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.bmi-button:hover {
+    background: #c1121f;
+}
+
+.bmi-reset {
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    background: #ffffff;
+    color: #555555;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.bmi-reset:hover {
+    background: #f5f5f5;
+}
+
+
+/* =========================
+   BMI RESULT
+========================= */
+
+.bmi-result {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.bmi-result h3 {
+    color: #555555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#bmi-value {
+    color: #e63946;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+#bmi-category {
+    color: #555555;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   BMI INFORMATION
+========================= */
+
+.bmi-info {
+    background: #111111;
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    padding: 40px;
+}
+
+.bmi-info h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.bmi-info > p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BMI CATEGORIES
+========================= */
+
+.bmi-category-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bmi-category-box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+    background: #1d1d1d;
+
+    border-radius: 5px;
+}
+
+.bmi-category-box span {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.bmi-category-box strong {
+    color: #e63946;
+    font-size: 13px;
+}
+
+
+/* =========================
+   IMPORTANT NOTE
+========================= */
+
+.bmi-note {
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-left: 3px solid #e63946;
+
+    background: #1d1d1d;
+}
+
+.bmi-note h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.bmi-note p {
+    color: #bbbbbb;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.bmi-cta {
+    margin-top: 70px;
+
+    padding: 55px 30px;
+
+    background: #111111;
+    color: #ffffff;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.bmi-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.bmi-cta h2 span {
+    color: #e63946;
+}
+
+.bmi-cta p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .bmi-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .bmi-header h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .bmi-page {
+        width: 92%;
+        padding: 50px 0;
+    }
+
+    .bmi-header {
+        margin-bottom: 40px;
+    }
+
+    .bmi-header h1 {
+        font-size: 30px;
+    }
+
+    .bmi-intro {
+        font-size: 14px;
+    }
+
+    .bmi-form,
+    .bmi-info {
+        padding: 25px;
+    }
+
+    .bmi-form h2,
+    .bmi-info h2 {
+        font-size: 24px;
+    }
+
+    #bmi-value {
+        font-size: 36px;
+    }
+
+    .bmi-cta {
+        margin-top: 50px;
+        padding: 40px 20px;
+    }
+
+    .bmi-cta h2 {
+        font-size: 26px;
+    }
+
+    .bmi-cta p {
+        font-size: 14px;
+    }
+
+    .bmi-category-box div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

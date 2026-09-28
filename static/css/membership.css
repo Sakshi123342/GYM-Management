@@ -1,0 +1,348 @@
+/* =========================
+   MEMBERSHIP PAGE
+========================= */
+
+.membership-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.membership-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.membership-header > p:first-child {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.membership-header h1 {
+    font-size: 42px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.membership-header h1 span {
+    color: #e63946;
+}
+
+.membership-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MEMBERSHIP GRID
+========================= */
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+}
+
+
+/* =========================
+   MEMBERSHIP CARD
+========================= */
+
+.membership-card {
+    position: relative;
+
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+
+    padding: 35px 30px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.membership-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   POPULAR PLAN
+========================= */
+
+.membership-card.popular {
+    border: 2px solid #e63946;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #e63946;
+    color: #ffffff;
+
+    padding: 7px 18px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.membership-card-header h2 {
+    color: #111111;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.plan-description {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.plan-price {
+    color: #111111;
+    font-size: 42px;
+    font-weight: 800;
+
+    margin-top: 25px;
+}
+
+.plan-price span {
+    color: #e63946;
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.plan-price small {
+    color: #777777;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.plan-divider {
+    width: 100%;
+    height: 1px;
+    background: #eeeeee;
+
+    margin: 25px 0;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.plan-features {
+    list-style: none;
+    text-align: left;
+
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    color: #555555;
+    font-size: 14px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================
+   PLAN BUTTON
+========================= */
+
+.plan-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 13px 20px;
+
+    background: #111111;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.plan-button:hover {
+    background: #e63946;
+}
+
+
+/* Popular button */
+
+.membership-card.popular .plan-button {
+    background: #e63946;
+}
+
+.membership-card.popular .plan-button:hover {
+    background: #c1121f;
+}
+
+
+/* =========================
+   BOTTOM CTA
+========================= */
+
+.membership-cta {
+    margin-top: 70px;
+
+    padding: 55px 30px;
+
+    background: #111111;
+    color: #ffffff;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+.membership-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.membership-cta h2 span {
+    color: #e63946;
+}
+
+.membership-cta p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+
+    color: #cccccc;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .membership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membership-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .membership-header h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .membership-page {
+        width: 92%;
+        padding: 50px 0;
+    }
+
+    .membership-header {
+        margin-bottom: 45px;
+    }
+
+    .membership-header h1 {
+        font-size: 30px;
+    }
+
+    .membership-intro {
+        font-size: 14px;
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .membership-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .membership-card {
+        padding: 35px 25px;
+    }
+
+    .plan-price {
+        font-size: 36px;
+    }
+
+    .membership-cta {
+        margin-top: 50px;
+        padding: 40px 20px;
+    }
+
+    .membership-cta h2 {
+        font-size: 26px;
+    }
+
+    .membership-cta p {
+        font-size: 14px;
+    }
+}

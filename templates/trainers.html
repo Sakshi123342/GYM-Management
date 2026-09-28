@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Trainers - FITZONE
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/trainers.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="trainers-page">
+
+    <!-- HEADER -->
+    <div class="trainers-header">
+        <p>OUR TEAM</p>
+
+        <h1>
+            Meet Our <span>Expert Trainers</span>
+        </h1>
+
+        <p class="trainers-intro">
+            Train with experienced professionals who are dedicated
+            to helping you achieve your fitness goals.
+        </p>
+    </div>
+
+
+    <!-- TRAINERS GRID -->
+    <div class="trainers-grid">
+
+        <!-- Trainer 1 -->
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                <div class="trainer-placeholder">💪</div>
+            </div>
+
+            <div class="trainer-info">
+
+                <h2>Rahul Sharma</h2>
+
+                <p class="trainer-specialization">
+                    Strength & Fitness Trainer
+                </p>
+
+                <p class="trainer-experience">
+                    8+ Years Experience
+                </p>
+
+                <p>
+                    Specializes in strength training, muscle building
+                    and personalized workout programs.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                <div class="trainer-placeholder">🏋️</div>
+            </div>
+
+            <div class="trainer-info">
+
+                <h2>Priya Verma</h2>
+
+                <p class="trainer-specialization">
+                    Weight Loss & Cardio Trainer
+                </p>
+
+                <p class="trainer-experience">
+                    6+ Years Experience
+                </p>
+
+                <p>
+                    Helps members achieve healthy weight loss,
+                    improve stamina and maintain fitness.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                <div class="trainer-placeholder">🔥</div>
+            </div>
+
+            <div class="trainer-info">
+
+                <h2>Arjun Patel</h2>
+
+                <p class="trainer-specialization">
+                    Personal & Functional Trainer
+                </p>
+
+                <p class="trainer-experience">
+                    7+ Years Experience
+                </p>
+
+                <p>
+                    Focuses on functional training, mobility,
+                    strength and personalized fitness plans.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Trainer 4 -->
+        <div class="trainer-card">
+
+            <div class="trainer-image">
+                <div class="trainer-placeholder">🧘</div>
+            </div>
+
+            <div class="trainer-info">
+
+                <h2>Anjali Singh</h2>
+
+                <p class="trainer-specialization">
+                    Yoga & Flexibility Trainer
+                </p>
+
+                <p class="trainer-experience">
+                    5+ Years Experience
+                </p>
+
+                <p>
+                    Specializes in yoga, flexibility, stretching
+                    and mind-body wellness.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CTA -->
+    <div class="trainers-cta">
+
+        <h2>
+            Train With The <span>Best</span>
+        </h2>
+
+        <p>
+            Get professional guidance and take your fitness
+            journey to the next level.
+        </p>
+
+        <a href="/contact/" class="btn-primary">
+            CONTACT US
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Membership Plans - FITZONE
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/membership.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="membership-page">
+
+    <!-- HEADER -->
+    <div class="membership-header">
+        <p>MEMBERSHIP PLANS</p>
+
+        <h1>
+            Choose Your <span>Fitness Plan</span>
+        </h1>
+
+        <p class="membership-intro">
+            Flexible membership plans designed to fit your fitness
+            goals and lifestyle.
+        </p>
+    </div>
+
+
+    <!-- MEMBERSHIP CARDS -->
+    <div class="membership-grid">
+
+        <!-- BASIC PLAN -->
+        <div class="membership-card">
+
+            <div class="membership-card-header">
+                <h2>Basic</h2>
+
+                <p class="plan-description">
+                    Perfect for beginners starting their fitness journey.
+                </p>
+            </div>
+
+            <div class="plan-price">
+                <span>₹</span>999
+                <small>/ Month</small>
+            </div>
+
+            <div class="plan-divider"></div>
+
+            <ul class="plan-features">
+                <li>✓ Gym Access</li>
+                <li>✓ Cardio Equipment</li>
+                <li>✓ Strength Equipment</li>
+                <li>✓ Locker Facility</li>
+                <li>✓ Basic Fitness Guidance</li>
+            </ul>
+
+            <a href="/contact/" class="plan-button">
+                GET STARTED
+            </a>
+
+        </div>
+
+
+        <!-- STANDARD PLAN -->
+        <div class="membership-card popular">
+
+            <div class="popular-badge">
+                MOST POPULAR
+            </div>
+
+            <div class="membership-card-header">
+                <h2>Standard</h2>
+
+                <p class="plan-description">
+                    A complete plan for regular fitness enthusiasts.
+                </p>
+            </div>
+
+            <div class="plan-price">
+                <span>₹</span>1499
+                <small>/ Month</small>
+            </div>
+
+            <div class="plan-divider"></div>
+
+            <ul class="plan-features">
+                <li>✓ Everything in Basic</li>
+                <li>✓ Personal Trainer Guidance</li>
+                <li>✓ Group Fitness Classes</li>
+                <li>✓ Yoga Sessions</li>
+                <li>✓ Progress Tracking</li>
+            </ul>
+
+            <a href="/contact/" class="plan-button">
+                GET STARTED
+            </a>
+
+        </div>
+
+
+        <!-- PREMIUM PLAN -->
+        <div class="membership-card">
+
+            <div class="membership-card-header">
+                <h2>Premium</h2>
+
+                <p class="plan-description">
+                    Advanced support for serious fitness goals.
+                </p>
+            </div>
+
+            <div class="plan-price">
+                <span>₹</span>2499
+                <small>/ Month</small>
+            </div>
+
+            <div class="plan-divider"></div>
+
+            <ul class="plan-features">
+                <li>✓ Everything in Standard</li>
+                <li>✓ Dedicated Personal Trainer</li>
+                <li>✓ Personalized Workout Plan</li>
+                <li>✓ Nutrition Guidance</li>
+                <li>✓ Monthly Fitness Assessment</li>
+            </ul>
+
+            <a href="/contact/" class="plan-button">
+                GET STARTED
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM CTA -->
+    <div class="membership-cta">
+
+        <h2>
+            Not Sure Which Plan Is <span>Right For You?</span>
+        </h2>
+
+        <p>
+            Contact our team and we will help you choose the best
+            membership according to your fitness goals.
+        </p>
+
+        <a href="/contact/" class="btn-primary">
+            CONTACT US
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

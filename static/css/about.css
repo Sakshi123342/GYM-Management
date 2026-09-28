@@ -1,0 +1,215 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+    background: #ffffff;
+    color: #222222;
+}
+
+
+/* =========================
+   ABOUT HEADER
+========================= */
+
+.about-header {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.about-header > p:first-child {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.about-header h1,
+.about-header h2 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.about-header h1 span,
+.about-header h2 span {
+    color: #e63946;
+}
+
+.about-intro {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ABOUT MAIN
+========================= */
+
+.about-main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 30px 8% 90px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* About Text */
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666666;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   STATS BOX
+========================= */
+
+.about-box {
+    background: #111111;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    border-radius: 10px;
+}
+
+.about-box div {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.about-box h3 {
+    color: #e63946;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.about-box p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+/* =========================
+   WHY FITZONE
+========================= */
+
+.about-why {
+    background: #f7f7f7;
+    padding: 30px 8% 90px;
+}
+
+.about-features {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.about-feature {
+    background: #ffffff;
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.about-feature:hover {
+    transform: translateY(-8px);
+}
+
+.about-feature-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.about-feature h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.about-feature p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .about-header {
+        padding: 60px 20px 40px;
+    }
+
+    .about-header h1,
+    .about-header h2 {
+        font-size: 32px;
+    }
+
+    .about-main {
+        padding: 20px 6% 60px;
+    }
+
+    .about-box {
+        padding: 25px 15px;
+        gap: 10px;
+    }
+
+    .about-box h3 {
+        font-size: 28px;
+    }
+
+    .about-why {
+        padding: 20px 6% 60px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+}

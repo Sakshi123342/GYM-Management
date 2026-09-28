@@ -1,0 +1,226 @@
+/* =========================
+   TRAINERS PAGE
+========================= */
+
+.trainers-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.trainers-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.trainers-header > p:first-child {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.trainers-header h1 {
+    font-size: 42px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.trainers-header h1 span {
+    color: #e63946;
+}
+
+.trainers-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TRAINERS GRID
+========================= */
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   TRAINER CARD
+========================= */
+
+.trainer-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.trainer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   TRAINER IMAGE
+========================= */
+
+.trainer-image {
+    height: 260px;
+    background: #eeeeee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trainer-placeholder {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    background: #111111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+
+/* =========================
+   TRAINER INFO
+========================= */
+
+.trainer-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.trainer-info h2 {
+    font-size: 22px;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.trainer-specialization {
+    color: #e63946;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.trainer-experience {
+    color: #555555;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.trainer-info > p:last-child {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.trainers-cta {
+    margin-top: 70px;
+    padding: 55px 30px;
+
+    background: #111111;
+    color: #ffffff;
+
+    text-align: center;
+    border-radius: 10px;
+}
+
+.trainers-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.trainers-cta h2 span {
+    color: #e63946;
+}
+
+.trainers-cta p {
+    color: #cccccc;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .trainers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trainers-header h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .trainers-page {
+        width: 92%;
+        padding: 50px 0;
+    }
+
+    .trainers-header h1 {
+        font-size: 30px;
+    }
+
+    .trainers-intro {
+        font-size: 14px;
+    }
+
+    .trainers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .trainer-image {
+        height: 230px;
+    }
+
+    .trainers-cta {
+        margin-top: 50px;
+        padding: 40px 20px;
+    }
+
+    .trainers-cta h2 {
+        font-size: 26px;
+    }
+}
